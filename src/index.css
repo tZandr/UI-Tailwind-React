@@ -17,3 +17,15 @@ body {
   background-color: rgb(12, 12, 12);
   color: rgb(235, 235, 235);
 }
+
+@layer components {
+  .genre-tag {
+    @apply text-xs text-muted border border-border rounded px-2 py-0.5;
+  }
+}
+
+@layer utilities {
+  .aspect-game {
+    aspect-ratio: 460 / 215;
+  }
+}
