@@ -1,73 +1,63 @@
-# React + TypeScript + Vite
+## Gameshop mockup with Typescript, React and Tailwind
+Simple mockup site for a gameshop, for now without a cart as I've got other more practical projects in mind that goes before this one.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Assignment below:
 
-Currently, two official plugins are available:
+## Bygg ett UI med React, TypeScript och
+Tailwind v4
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Del 1 — Projekt
+Skapa ett React-projekt med TypeScript och installera Tailwind v4.
 
-## React Compiler
+Krav:
+● Projektet ska använda React
+● Projektet ska använda TypeScript
+● Tailwind ska vara kopplat till projektet
+● Din globala CSS-fil ska importera Tailwind
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Del 2 — Theme
+Skapa ett eget tema med Tailwind v4.
+Krav:
+● Minst två egna färger
+● Minst en egen font eller spacing-token
+● Färgerna ska användas i gränssnittet
 
-## Expanding the ESLint configuration
+## Del 3 — Komponenter
+Skapa minst tre komponenter:
+● Navbar
+● Card // (Served as GameTab.tsx)
+● Button
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Krav:
+● Alla komponenter ska vara separata filer
+● Minst två komponenter ska använda props
+● Props ska vara typade med TypeScript
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Del 4 — Layout
+Bygg en sida som innehåller:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+● En navbar högst upp
+● En huvudsektion med minst tre cards
+● Minst två knappar
+● En responsiv layout
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Krav:
+● Layouten ska fungera på mobil och desktop
+● Använd minst två responsiva Tailwind-prefix, till exempel md: eller lg:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Del 5 — Tailwind CSS-funktioner
+Du ska använda:
+● @theme
+● @apply
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Krav:
+● Skapa minst en egen komponentklass med @apply
+● Använd den i minst en React-komponent
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Del 6 — Egen utility
+Skapa minst en egen utility-klass.
+
+Krav:
+● Den ska ligga i rätt Tailwind-layer
+● Den ska användas i projektet
+● Den ska lösa ett praktiskt stylingproblem
